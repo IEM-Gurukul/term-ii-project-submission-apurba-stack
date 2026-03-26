@@ -8,12 +8,12 @@ public class Rental {
     private int days;
     private double totalCost;
 
-    public Rental(int rentalId, Customer customer, Vehicle vehicle, int days) {
+    public Rental(int rentalId, Customer customer, Vehicle vehicle, int days, double totalCost) {
         this.rentalId = rentalId;
         this.customer = customer;
         this.vehicle = vehicle;
         this.days = days;
-        this.totalCost = vehicle.calculateCost(days);
+        this.totalCost = totalCost;
     }
 
     public int getRentalId() {
