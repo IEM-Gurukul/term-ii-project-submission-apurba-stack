@@ -12,33 +12,25 @@ import java.util.List;
 
 public class MainFrame extends JFrame {
 
-    // RentalManager handles all vehicle and rental logic
+    
     private RentalManager manager = new RentalManager();
 
-    // Simple list to store customers
     private List<Customer> customers = new ArrayList<>();
 
-    // Simple list to store rentals
     private List<Rental> rentals = new ArrayList<>();
 
-    // CardLayout switches between the 4 panels
     private JPanel mainPanel;
     private CardLayout cardLayout;
 
-    // Output log shown at the bottom of the window
     private JTextArea outputArea;
 
-    // Fields for Edit Fleet panel
     private JTextField fleetIdField, fleetModelField, fleetRateField;
     private JComboBox<String> fleetTypeBox;
 
-    // Fields for Add Customer panel
     private JTextField custIdField, custNameField;
 
-    // Fields for Rent panel
     private JTextField rentCustIdField, rentVehicleIdField, rentDaysField;
     
-    // Text area for Status & Rates panel
     private JTextArea statusArea;
 
     // ─────────────────────────────────────────────────────────────────────────
